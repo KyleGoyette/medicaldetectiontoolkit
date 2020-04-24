@@ -19,8 +19,8 @@ Retina Net. According to https://arxiv.org/abs/1708.02002
 Retina U-Net. According to https://arxiv.org/abs/1811.08661
 """
 
-import utils.model_utils as mutils
-import utils.exp_utils as utils
+import medicaldetectiontoolkit.utils.model_utils as mutils
+import medicaldetectiontoolkit.utils.exp_utils as utils
 import sys
 
 import numpy as np
@@ -30,7 +30,7 @@ import torch.nn.functional as F
 import torch.utils
 
 sys.path.append('../')
-from custom_extensions.nms import nms
+from medicaldetectiontoolkit.custom_extensions.nms import nms
 
 ############################################################
 #  Network Heads
